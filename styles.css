@@ -1,0 +1,19 @@
+h1{
+    color:blue;
+    font-size:36px;
+}
+.button{
+    background-color:blue;
+    color:yellow;
+    padding: 10px
+}
+.button:hover
+{
+    background-color:darkblue;
+}
+#container{
+    width:100%;
+    height:100vh;
+    background-color:lightgray;
+    position:relative;
+}
