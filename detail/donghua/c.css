@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.logo-container {
+    margin: 20px 0;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+}
+
+.banner-container {
+    margin: 10px;
+}
+
+nav {
+    background-color: #FF0000;
+}
+
+
