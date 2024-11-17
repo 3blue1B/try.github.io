@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 /* Header Styling */
@@ -18,17 +19,39 @@ header {
     padding: 10px;
 }
 
+/* Logo Container */
 .logo-container {
     margin: 20px 0;
+    animation: logoAnimation 3s ease-in-out infinite; /* Adding the animation to the logo container */
 }
 
+/* Keyframes for Logo Animation */
+@keyframes logoAnimation {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Logo Styling */
 .logo {
     width: 140px;
     height: 140px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Add smooth scale on hover */
 }
 
-.banner-container {
-    margin: 10px;
+/* Hover Effect for Logo */
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 /* Navigation Styling */
@@ -47,14 +70,21 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Navigation Link Styling */
 nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    padding: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Hover Effects for Navigation Links */
 nav a:hover {
     color: #00FF00; /* Hover effect for links */
+    transform: scale(1.2); /* Make the links slightly bigger on hover */
+    background-color: rgba(255, 255, 255, 0.3); /* Subtle background change on hover */
 }
 
 /* Main Content Section */
@@ -63,10 +93,25 @@ main {
     color: white;
     text-align: center;
     padding: 40px 10px;
+    opacity: 0; /* Initially hide content */
+    animation: fadeIn 2s forwards 1s; /* Fade-in effect after 1 second */
 }
 
+/* Keyframes for Fade-in Effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Slide-in effect */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Normal position */
+    }
+}
+
+/* Header Title Styling */
 .intro-section h1 {
-    font-family: '楷体', serif;
+    font-family: 'Arial', serif; /* Change font to a valid one */
     font-size: 60px;
     color: blue;
 }

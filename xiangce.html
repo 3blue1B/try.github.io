@@ -24,30 +24,27 @@
         </ul>
     </nav>
 
-    <main>
-        <div class="animation-gallery">
-            <h1>动画作品展示</h1>
-            <div class="animation-item">
-    <h2>Click the buttons to change the image</h2>
-
-    <!-- Image element -->
-    <img id="image" src="image1.jpg" alt="Image" width="300">
-    <!-- Buttons to change images -->
-    <button onclick="changeImage('image2.jpg')">Image 2</button>
-    <button onclick="changeImage('image3.jpg')">Image 3</button>
-    <button onclick="changeImage('image4.webp')">Image 4</button>
-    <button onclick="changeImage('image1.jpg')">Image 1</button>
-    <script>
-        // Function to change the image source
-        function changeImage(imageSrc) {
-            document.getElementById("image").src = imageSrc;
-        }
-    </script>
-
-            </div>
+<main>
+    <div class="animation-gallery">
+        <h1> 相册</h1>
+        <div class="animation-item">
+            <img src="images/star.jpg" alt="动画作品 1" width="30%" height="auto">
+            <p>动画作品 1</p>
         </div>
-    </main>
-
+        <div class="animation-item">
+            <img src="images/qiang.jpg" alt="动画作品 2" width="30%" height="auto">
+            <p>动画作品 2</p>
+        </div>
+        <div class="animation-item">
+            <img src="images/MAO.jpg" alt="动画作品 3" width="30%" height="auto">  
+            <p>动画作品 3</p>
+        </div>
+        <div class="animation-item">
+            <img src="images/1.gif" alt="动画作品 4" width="30%" height="auto">
+            <p>动画作品 4</p>
+        </div>
+    </div>
+</main>
     <footer>
         <p>&copy; 2008 小小版权所有</p>
     </footer>
