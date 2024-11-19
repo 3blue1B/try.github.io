@@ -1,0 +1,54 @@
+\documentclass{article} % Document class (article, book, report, etc.)
+\usepackage{amsmath} % Importing a package for mathematical symbols
+\usepackage{graphicx}
+\title{My First LaTeX Document} % Document title
+\author{Your Name} % Author of the document
+\date{\today} % Date (or can be customized)
+
+\begin{document} % Start of document content
+
+\maketitle
+\tableofcontents
+\section{Introduction} % Section
+This is my first document in LaTeX. I am learning how to use LaTeX for writing research papers.
+
+\subsection{Subsection} % Subsection
+This is a subsection under Introduction.
+
+\textbf{Bold Text}\\ % Bold Text
+\textit{Italic Text}\\ % Italic Text
+\underline{Underlined Text}\\ % Underlined Text
+$ a^2+b^2 = c^2+e^\pi $\\
+\[
+\frac{a}{b} + \sqrt{x} = \sum_{i=0}^n i^\pi 
+\]
+\subsubsection{ss}
+hh\\
+\begin{itemize}
+    \item I watch the moon letting run my moon
+    \item Can't stop think of you
+    \item I watch you SO long nice know you are me moving on  moving on
+\end{itemize}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{logo.png}
+  \caption{A Sample Figure}
+  \label{fig:sample}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Header 1 & Header 2 & Header 3 \\
+\hline
+Row 1, Col 1 & Row 1, Col 2 & Row 1, Col 3 \\
+Row 2, Col 1 & Row 2, Col 2 & Row 2, Col 3 \\
+cell1  & cell2 & cell 3 \\
+\hline
+\end{tabular}
+\caption{A Sample Table}
+\end{table}
+
+\end{document} % End of document content
+

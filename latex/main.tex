@@ -1,0 +1,139 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[UTF8, fontset=none]{ctex} % Chinese support with manual font selection
+\setCJKmainfont{Noto Serif CJK SC} 
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
+
+\usepackage{graphicx} % To include images
+\usepackage{geometry} % Page layout
+\usepackage{fancyhdr} % Header/Footer
+\usepackage{hyperref} % Hyperlink support
+
+% Page layout settings
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{实验报告} % Left header
+\fancyhead[R]{\thepage} % Right header
+
+% Cover page setup
+\title{
+    \vspace{2cm}
+    {\Huge \textbf{华中科技大学}} \\[0.5cm]
+    {\LARGE 课程实验报告} \\[1cm]
+    \includegraphics[width=0.4\textwidth]{logo.png} % University logo
+    \\[2cm]
+}
+\author{
+    \begin{tabular}{rl}
+        \textbf{课程名称:} & 新生实践课 \\
+        \textbf{专业班级:} & CS2407 \\
+        \textbf{学号:} & U202414718 \\
+        \textbf{姓名:} & 李东豪 \\
+        \textbf{指导教师:} & 李榕 \\
+        \textbf{报告日期:} & 2024年11月19日 \\
+    \end{tabular}
+}
+\date{}
+
+\begin{document}
+% Title page
+\maketitle
+\thispagestyle{empty} % No page number on title page
+\newpage
+
+% Table of contents
+\tableofcontents
+\newpage
+
+% Section 1: Experiment Requirements
+\section{实验要求}
+\begin{enumerate}
+    \item 页面内容需图文并茂、积极向上，页面间使用相对路径链接。
+    \item 所有网页文件的总大小控制在50MB以内。
+    \item 将网页推送到Github，通过Pages功能发布主页链接。
+\end{enumerate}
+
+% Section 2: Experiment Process
+\section{实验过程}
+\subsection{网页设计}
+\subsubsection{网页设计}
+在本次实验中，我使用了HTML、CSS以及JavaScript来设计和开发我的个人网页。整个设计过程包含了多个步骤，从网页的基本结构搭建，到样式的设置，再到互动功能的实现，每个环节都让我积累了宝贵的经验。
+
+首先，我通过HTML定义了网页的基本结构，包括页面的头部、内容区域和底部。我设计了多个分页面，分别包括“个人简介”、“兴趣爱好”、“项目展示”等，每个页面都有其独立的内容，并通过链接将它们连接在一起，确保用户能够便捷地在不同页面之间进行跳转。
+
+在网页的样式设计方面，我使用了CSS来调整页面的布局和外观。我通过设置字体、颜色、排版等，确保网页具有良好的视觉效果，并使得页面结构清晰、易于阅读。例如，在个人简介页面中，我使用了较为简洁和清晰的排版，突出显示了我的基本信息，确保页面的可读性和美观度。
+
+其中，网页的动画效果和互动功能是我在设计过程中面临的一项挑战。在“个人简介”和“兴趣爱好”等页面，我设计了一些动画效果，用于吸引用户的注意力并提升用户体验。例如，当用户滚动页面时，一些元素会逐渐显现或移动，这样的动画效果让网页显得更加生动和富有活力。此外，我还在网页中加入了互动功能，例如按钮点击后弹出提示框或跳转至其他页面。最初，在实现这些功能时，我遇到了一些困难，特别是在JavaScript的学习和调试过程中。由于对JavaScript的语法和交互方式不够熟悉，我曾多次陷入调试的困境，但通过查阅资料和进行自学，我最终成功地解决了问题，并实现了所需的功能。
+
+在完成网页的基本设计后，我对网页进行了多次优化。首先，我调整了图片的大小和格式，确保网页加载速度尽可能快。其次，我测试了不同浏览器的兼容性，确保网页在不同的设备和浏览器中都能正常显示。
+
+通过这个过程，我不仅学到了网页设计的基础知识，也深刻理解了如何通过HTML、CSS和JavaScript实现网页的交互效果和动画展示。尽管过程中遇到了许多挑战，但通过不断学习和尝试，我成功克服了这些困难，最终完成了自己的网页设计。
+
+\subsubsection{分页面的创建}
+除了主要的个人主页，我还设计了多个分页面，分别用于展示不同的内容。例如，在“兴趣爱好”页面中，我列出了自己的一些兴趣，并通过CSS和JavaScript增强了互动性，用户可以点击按钮查看不同的兴趣分类。而在“项目展示”页面中，我展示了自己参与的一些项目，并为每个项目添加了详细的描述、图片和链接。
+
+为了提高用户体验，我确保所有页面之间的链接使用相对路径，避免了因路径问题而导致的网页无法打开或图片加载失败等问题。此外，我还特别注意了页面的响应式设计，确保网页能够适应不同设备的屏幕尺寸，提供流畅的浏览体验。
+
+总体来说，本次网页设计实验不仅让我掌握了网页设计的基本技巧，还增强了我解决问题的能力，尤其是在遇到技术难题时，我通过自学和实践成功突破了瓶颈，实现了一个功能完整、界面美观的个人网页
+
+\subsection{文件结构}
+文件夹结构大体如下：
+\begin{verbatim}
+pengjw630/  
+├── index.html   主页
+├── image/       图片文件
+└─── detail/     分页面文件
+\end{verbatim}
+\textbf{具体如下:}\\
+\includegraphics[width=0.4\textwidth]{1.png}
+\includegraphics[width=0.4\textwidth]{2.png}
+
+
+\subsection{发布到Github}
+\begin{enumerate}
+    \item 在Github上注册并新建仓库；
+    \item 用Git完成推送
+    \item 在Github Pages服务中启用网页发布功能，获取主页地址。
+\end{enumerate}
+
+% Section 3: Experiment Results
+\section{实验成果}
+\begin{itemize}
+    \item 完成了包含主页和4个分页面的个人网页；
+    \item 页面风格简洁美观，所有链接正常；
+    \item Github发布地址：\url{https://3blue1b.github.io/try.github.io/}
+\end{itemize}
+\\[2cm]
+
+% Section 4: Experiment Summary
+\section{实验总结}
+实验总结
+通过本次网页设计实验，我深入学习并实践了网页设计的基本方法，掌握了HTML、CSS、JavaScript的基础应用，同时也体会到网页开发过程中遇到的各种挑战和解决问题的策略。这个实验不仅帮助我巩固了网页开发的技术基础，还提升了我的自主学习能力和团队协作能力，为今后的网页开发打下了坚实的基础。
+
+在实验的初期，我主要集中在网页的结构搭建上，通过HTML语言构建了网页的框架，包括头部、主体部分和底部。在这个过程中，我学习了如何使用HTML标签来定义页面中的文本、图片、链接等元素，同时通过合理的布局让网页更加清晰、易读。随后，我使用CSS进行样式设计，优化了网页的外观，使其更加美观、简洁。例如，通过设置字体、背景颜色、排版等，使网页的整体风格更加协调和现代。
+
+在此基础上，我开始引入JavaScript来实现网页的互动功能。这是一个全新的挑战，尤其是在实现一些动画效果和交互功能时，我遇到了一些困难。比如，如何让页面中的某些元素在滚动时渐变显示，如何为按钮添加点击事件等。刚开始时，JavaScript的语法和逻辑对我来说有些陌生，经过多次尝试和查阅资料，我逐步克服了这些困难，并成功地实现了所需的功能。尤其是在实现页面交互和动画效果时，JavaScript的强大功能给了我很大的帮助，最终让我能够为网页增添许多动态效果，提升了用户体验。
+
+此外，本次实验让我深刻意识到网页设计不仅仅是编写代码，更是一个涉及用户体验和设计的过程。我特别注重了页面的美观性和功能性，比如在“个人简介”和“兴趣爱好”页面中加入了动效和交互功能，这些元素让网页看起来更具吸引力，同时也增强了用户与网页的互动性。通过这些细节，我认识到，一个成功的网页不仅需要技术支持，更需要注重用户的体验和视觉效果。
+
+总的来说，本次实验让我更加熟悉了网页设计的全过程，从网页的基础搭建到样式设置，再到交互功能的实现，每个环节都让我受益匪浅。通过自学和实践，我不断克服技术难题，逐步完成了自己的网页设计。同时，我也发现了自己在前端开发方面的兴趣和潜力，未来我会继续深入学习CSS、JavaScript等技术，不断提升自己的技能，力争做出更加优秀的网页作品。
+% Appendix
+\appendix
+\section{附录}
+\subsection{网页代码示例}
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人主页</title>
+</head>
+<body>
+    <h1>欢迎来到我的主页</h1>
+    <p>这里是实验报告网页展示内容。</p>
+</body>
+</html>
+\end{verbatim}
+
+\end{document}
+
